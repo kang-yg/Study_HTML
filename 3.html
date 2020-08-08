@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Server</title>
+</head>
+
+<body>
+  <h1>Home Server</h1>
+
+  <li><a href="#PPIP">Public vs Private IP Address</a></li>
+  <li><a href="#NAT">Network Address Translation</a></li>
+  <li><a href="#PORT">Port forwarding</a></li>
+  <li><a href="#">Dynamic vs Static IP Address</a></li>
+  <li><a href="#">Dynamic DNS</a></li>
+
+  <h2><a id="PPIP">Public vs Private IP Address</a></h2>
+  <p>
+    <img src="PPIP.JPG" alt="Public vs Private IP Address" width="50%" height="500"> <br>
+    WAN의 IP Address는 Public IP Address. 즉, 사진의 59.6.6623은 Public IP Address이다.<br>
+    LAN의 IP Address는 Private IP Address. 즉, 사진의 192.168.0.2 / 192.168.0.3 등은 Private IP Address이다.<br>
+    공유기의 192.168.0.1 IP주소는 Gateway Address 또는 Router Address라고 한다.
+  </p>
+
+  <h2><a id="NAT">NAT(Network Address Translation)</a></h2>
+  <p>
+    <strong>[클라이언트가 외부 네트워크 접속 순서]</strong>
+  <ol>
+    <li>Private IP Address가 공유기에 요청</li>
+    <li>Private IP Address는 공유기에 저장</li>
+    <li>Private IP Address를 Public IP Address로 변경. ← NAT(>Network Address Translation)의 역할</li>
+    <li>Public IP Address로 응답을 받아서 최종적으로 Private IP Address로 응답을 전달한다.</li>
+  </ol>
+  </p>
+
+  <h2><a id="PORT">Port forwarding</a></h2>
+  <p>
+    <strong>포트 :</strong> 하나의 컴퓨터에는 여러개의 서버라 설치 될 수 있습니다. 클라이언트가 컴퓨터에 접속할 때 어떤 서버와 접속하려고 하는지는 구분할 수 있는 방법이 필요합니다. <br>
+    이를 위해서 준비된 개념이 포트입니다. ip 주소가 컴퓨터에 접속하는 주소라면, 포트는 컴퓨터 안에 설치된 서버에 접속하는 주소라고 할 수 있습니다.
+    <img src="port.JPG" alt="Public vs Private IP Address" width="50%" height="500"> <br>
+
+  </p>
+
+
+
+
+</body>
+
+</html>
